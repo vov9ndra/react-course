@@ -6,3 +6,11 @@
   .pic {
       width: 1000px;
   }
+
+  .postsBlock {
+      padding: 10px
+  }
+
+  .posts {
+      margin-top: 10px;
+  }
