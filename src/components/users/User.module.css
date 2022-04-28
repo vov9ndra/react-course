@@ -36,3 +36,7 @@
     grid-area: b;
     height: 100px;
 }
+
+.selectedPage {
+    font-weight: bold;
+}
