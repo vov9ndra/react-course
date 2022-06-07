@@ -1,6 +1,7 @@
 import React from 'react';
-import s from './ProfileInfo.module.css'
-import Preloader from './../../Common/Preloader.js'
+import s from './ProfileInfo.module.css';
+import Preloader from './../../Common/Preloader.js';
+import ProfileStatusWithHooks from './ProfileStatusWithHooks.jsx';
 
 
 const ProfileInfo = (props) => {
@@ -9,18 +10,15 @@ const ProfileInfo = (props) => {
     }
     return (
         <div>
-            <div>
-                <img className={s.pic} src='https://i.ucrazy.ru/files/i/2012.3.6/1331032142_savv-3.jpg'></img>
-            </div>
             <div className={s.descriptionBlock}>
                 <img src={props.profile.photos.small}/>
+                <ProfileStatusWithHooks status={props.status} updateStatus={props.updateStatus}/>
+                <div>
+                    {props.profile.fullName}
+                </div>
                 <div>
                   Status:  {props.profile.aboutMe}
                 </div>
-                <div>
-                    Status:  {props.profile.aboutMe}
-                </div>
-
             </div>
         </div>
 

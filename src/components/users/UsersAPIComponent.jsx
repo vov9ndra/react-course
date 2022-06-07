@@ -1,34 +1,18 @@
 import React from 'react';
-import s from "./User.module.css";
-import * as axios from 'axios'
-import Users from '../users/Users'
-import Preloader from './../Common/Preloader.js'
+import Users from '../users/Users';
+import Preloader from './../Common/Preloader.js';
 
 
 class UsersAPIComponent extends React.Component {
 
     componentDidMount() {
         if (this.props.usersData.length === 0) {
-            axios.get(`https://social-network.samuraijs.com/api/1.0/users?page=${this.props.currentPage}&count=${this.props.pageSize}`).then(response => {
-                this.props.toggeleIsFetching(true)
-                this.props.setUsers(response.data.items)
-                this.props.setTotalUsersCount(response.data.totalCount)
-                this.props.toggeleIsFetching(false)
-
-            })
-        alert('adasfaf')
+            this.props.getUsersThunkCreator(this.props.currentPage, this.props.pageSize)
         }
-
     }
 
     onPageChanged = (pageNumber) => {
-        this.props.toggeleIsFetching(true)
-        this.props.setCurrentPage(pageNumber)
-        axios.get(`https://social-network.samuraijs.com/api/1.0/users?page=${pageNumber}&count=${this.props.pageSize}`).then(response => {
-            this.props.toggeleIsFetching(false)
-            this.props.setUsers(response.data.items)
-
-        })
+        this.props.pageChangedThunkCreator(pageNumber, this.props.pageSize)
     }
 
     render() {
@@ -40,6 +24,10 @@ class UsersAPIComponent extends React.Component {
                    onPageChanged={this.onPageChanged}
                    usersData={this.props.usersData}
                    toggleFollow={this.props.toggleFollow}
+                   toggleFollowingProgress={this.props.toggleFollowingProgress}
+                   followingInProgress={this.props.followingInProgress}
+                   followUserThunkCreator={this.props.followUserThunkCreator}
+                   unfollowUserThunkCreator={this.props.unfollowUserThunkCreator}
             />
         </>
 
@@ -47,3 +35,4 @@ class UsersAPIComponent extends React.Component {
 };
 
 export default UsersAPIComponent;
+

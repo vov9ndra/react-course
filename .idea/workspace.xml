@@ -4,17 +4,36 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4e314dc-a414-4823-9f6e-abf46609255d" name="Changes" comment="15/03/">
-      <change afterPath="$PROJECT_DIR$/src/components/Common/Preloader.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/users/UsersAPIComponent.jsx" afterDir="false" />
+    <list default="true" id="a4e314dc-a414-4823-9f6e-abf46609255d" name="Changes" comment="Class component">
+      <change afterPath="$PROJECT_DIR$/src/api/api.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/HOC/AuthRedirect.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Header/HeaderContainer.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Login/Login.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileStatus.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/app-reducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/auth-reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Dialogs/DialogsContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dialogs/DialogsContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navbar/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/Navbar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPostsContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPostsContainer.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfileContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfileContainer.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileInfo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileInfo.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/users/User.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/users/User.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/users/Users.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/users/Users.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/users/UsersAPIComponent.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/users/UsersAPIComponent.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/users/UsersContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/users/UsersContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/dialogs-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/dialogs-reducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/profile-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/profile-reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/redux-store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/redux-store.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/users-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/users-reducer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -72,8 +91,21 @@
       </RecentBranches>
     </option>
   </component>
-  <component name="GithubDefaultAccount">
-    <option name="defaultAccountId" value="b61e9e16-8e2c-4d6b-81ca-ff6569472963" />
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="ed9007b6-d1c9-4b28-8a78-dbb081b19084" />
+        <option name="url" value="https://github.com/vov9ndra/react-course" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/App.js" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/components/users/UsersAPIComponent.jsx" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/components/users/Users.jsx" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/components/Profile/ProfileContainer.jsx" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/components/Header/Header.jsx" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/components/Navbar/Navbar.jsx" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -82,7 +114,10 @@
     <option name="myRunOnSave" value="true" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <hideBySeverity>
+      <option value="300" />
+    </hideBySeverity>
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="26IHkiOl4R3b2D7mrXQg0TelOoa" />
   <component name="ProjectViewState">
@@ -90,27 +125,31 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="GitStage.ChangesTree.GroupingKeys" value="directory&#10;module&#10;repository" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/Profile/ProfileInfo" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.eslint" value="C:\Users\vovan\Desktop\vscode-new-react-course\vscode-new-react-course\node_modules\eslint" />
+    <property name="node.js.selected.package.standard" value="" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.JavaScript" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2021.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="typescript.add.unambiguous.imports.on.the.fly" value="true" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\vovan\Desktop\vscode-new-react-course\vscode-new-react-course\src\components\Profile\ProfileInfo" />
+      <recent name="C:\Users\vovan\Desktop\vscode-new-react-course\vscode-new-react-course\src\redux" />
+      <recent name="C:\Users\vovan\Desktop\vscode-new-react-course\vscode-new-react-course\src\components\Header" />
       <recent name="C:\Users\vovan\Desktop\vscode-new-react-course\vscode-new-react-course\src\components\Profile" />
       <recent name="C:\Users\vovan\Desktop\vscode-new-react-course\vscode-new-react-course\src\components\users" />
-      <recent name="C:\Users\vovan\Desktop\vscode-new-react-course\vscode-new-react-course\src\redux" />
-      <recent name="C:\Users\vovan\Desktop\vscode-new-react-course\vscode-new-react-course\src\components\Dialogs" />
-      <recent name="C:\Users\vovan\Desktop\vscode-new-react-course\vscode-new-react-course\src\components\Profile\MyPosts" />
     </key>
   </component>
   <component name="RunManager">
@@ -172,7 +211,37 @@
       <workItem from="1650814436977" duration="4550000" />
       <workItem from="1650992146073" duration="6026000" />
       <workItem from="1651078926424" duration="7457000" />
-      <workItem from="1651161368342" duration="687000" />
+      <workItem from="1651161368342" duration="7486000" />
+      <workItem from="1651249758613" duration="6855000" />
+      <workItem from="1651333561985" duration="6998000" />
+      <workItem from="1651391405119" duration="2299000" />
+      <workItem from="1651394748851" duration="13471000" />
+      <workItem from="1651507386975" duration="7477000" />
+      <workItem from="1651592519006" duration="4063000" />
+      <workItem from="1651676367952" duration="8165000" />
+      <workItem from="1651764775035" duration="3134000" />
+      <workItem from="1652030467409" duration="1212000" />
+      <workItem from="1652113268086" duration="1247000" />
+      <workItem from="1652193328973" duration="5566000" />
+      <workItem from="1652286087054" duration="3667000" />
+      <workItem from="1652457599569" duration="6487000" />
+      <workItem from="1652715823817" duration="5701000" />
+      <workItem from="1652891072370" duration="3579000" />
+      <workItem from="1652973329903" duration="1789000" />
+      <workItem from="1653147244616" duration="6595000" />
+      <workItem from="1653236024615" duration="1642000" />
+      <workItem from="1653319739395" duration="7686000" />
+      <workItem from="1653406869585" duration="11262000" />
+      <workItem from="1653492887443" duration="6449000" />
+      <workItem from="1653579204569" duration="9178000" />
+      <workItem from="1653756995310" duration="6803000" />
+      <workItem from="1653839624937" duration="8556000" />
+      <workItem from="1654013237411" duration="6035000" />
+      <workItem from="1654181970744" duration="3945000" />
+      <workItem from="1654274171640" duration="588000" />
+      <workItem from="1654444821195" duration="598000" />
+      <workItem from="1654535153174" duration="5594000" />
+      <workItem from="1654611137233" duration="751000" />
     </task>
     <task id="LOCAL-00001" summary="12/03">
       <created>1647111484541</created>
@@ -209,7 +278,28 @@
       <option name="project" value="LOCAL" />
       <updated>1647356986085</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="28/04/">
+      <created>1651162218554</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1651162218554</updated>
+    </task>
+    <task id="LOCAL-00007" summary="28/04/">
+      <created>1651162262038</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1651162262038</updated>
+    </task>
+    <task id="LOCAL-00008" summary="28/04/">
+      <created>1651162849599</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1651162849599</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -226,7 +316,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="test" />
+                        <option value="HEAD" />
                       </list>
                     </value>
                   </entry>
@@ -243,7 +333,8 @@
     <MESSAGE value="14/03" />
     <MESSAGE value="14/03/1" />
     <MESSAGE value="15/03/" />
-    <option name="LAST_COMMIT_MESSAGE" value="15/03/" />
+    <MESSAGE value="28/04/" />
+    <option name="LAST_COMMIT_MESSAGE" value="28/04/" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

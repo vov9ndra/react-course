@@ -1,12 +1,14 @@
 import React from 'react';
-import  s from './Navbar.module.css'
-import {NavLink} from "react-router-dom";
+import s from './Navbar.module.css';
+import { NavLink } from 'react-router-dom';
+import { connect } from 'react-redux';
 
 
-const Navbar = () => {
+const Navbar = (props) => {
+
     return <nav className={s.nav}>
     <div className={s.item}>
-        <NavLink to='profile' className={navData => navData.isActive ? s.active : s.item}>Profile</NavLink>
+        <NavLink to={'profile/' + props.id}  className={navData => navData.isActive ? s.active : s.item}>Profile</NavLink>
     </div>
     <div className={s.item}>
         <NavLink to='dialogs' className={navData => navData.isActive ? s.active : s.item}>Messages</NavLink>
@@ -26,4 +28,8 @@ const Navbar = () => {
 
 }
 
-export default Navbar
+const mapStateToProps = (state) => ({
+    id: state.auth.id
+})
+
+export default connect(mapStateToProps, null)(Navbar)

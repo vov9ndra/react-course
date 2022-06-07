@@ -11,26 +11,16 @@ let initialState = {
         {id: 4, name: 'Danil'},
         {id: 5, name: 'Tanya'}
     ],
-    newMessageText: 'awfa'
 };
-
-
-
 
 let dialogsReducer = (state = initialState, action) => {
     switch (action.type) {
         case 'ADD-MESSAGE':
             return {
                 ...state,
-                messages: [...state.messages, {id: 4, message: state.newMessageText}] ,
-                newMessageText: ''
+                messages: [...state.messages, {id: 4, message: action.newMessage}] ,
             }
 
-        case 'UPDATE-NEW-MESSAGE-TEXT':
-            return {
-                ...state,
-                newMessageText: action.newMessageText
-            }
         default:
             return state
 
@@ -38,13 +28,8 @@ let dialogsReducer = (state = initialState, action) => {
 }
 
 
-export const addMessageActionCreator = () => ({
-    type: 'ADD-MESSAGE'
+export const addMessageActionCreator = (newMessage) => ({
+    type: 'ADD-MESSAGE', newMessage
 })
-
-export const onMessageChangeActionCreator = (text) => ({
-    type: 'UPDATE-NEW-MESSAGE-TEXT', newMessageText: text
-})
-
 
 export default dialogsReducer
